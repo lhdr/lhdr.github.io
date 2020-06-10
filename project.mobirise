@@ -1,40 +1,36 @@
 {
   "settings": {
-    "name": "Friends Truck",
+    "name": "Les Halls Du Roeulx",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
       "styling": {
-        "primaryColor": "#a61f23",
-        "secondaryColor": "#762a3d",
-        "successColor": "#662c3b",
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
         "infoColor": "#82786E",
         "warningColor": "#879A9F",
         "dangerColor": "#B1A374",
         "mainFont": "Rubik",
         "display1Font": "Rubik",
-        "display1Size": "4",
+        "display1Size": 4.25,
         "display2Font": "Rubik",
-        "display2Size": "2.2",
+        "display2Size": 3,
         "display5Font": "Rubik",
-        "display5Size": "1",
+        "display5Size": 1.5,
         "display7Font": "Rubik",
-        "display7Size": "0.8",
+        "display7Size": 1,
         "display4Font": "Rubik",
-        "display4Size": "1",
+        "display4Size": 1,
         "isRoundedButtons": true,
         "isAnimatedOnScroll": true,
         "isScrollToTopButton": false
       },
-      "additionalSetColors": [
-        "#762a3d",
-        "#662c3b",
-        "#b92519",
-        "#a61f23"
-      ]
+      "additionalSetColors": []
     },
     "path": "@PROJECT_PATH@",
+    "versionFirst": "4.12.3",
     "siteFonts": [
       {
         "css": "'Rubik', sans-serif",
@@ -42,147 +38,41 @@
         "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "versionFirst": "4.7.6",
-    "uniqCompNum": 29,
+    "uniqCompNum": 20,
     "versionPublish": "4.12.3",
+    "screenshot": "screenshot.png",
     "imageResize": true,
     "favicon": false,
-    "robotsSwitcher": true,
+    "robotsSwitcher": false,
     "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": "on",
+    "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "screenshot": "screenshot.png",
-    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n"
+    "witsec-mailform": true,
+    "witsec-mailform-to": "matthieu.nicaise@outlook.com",
+    "witsec-mailform-from": "matthieu.nicaise@outlook.com",
+    "witsec-mailform-from-them": false,
+    "witsec-mailform-from-name": "Your Name",
+    "witsec-mailform-from-name-them": false,
+    "witsec-mailform-from-name-them-field": "{name}",
+    "witsec-mailform-template": "Hi,\n\nYou have received a new message from your website.\n\n{formdata}\n\nDate: {date}\nRemote IP: {ip}\n\nHave a nice day.",
+    "witsec-mailform-recaptcha": false,
+    "witsec-mailform-recaptcha-sitekey": "",
+    "witsec-mailform-recaptcha-secretkey": "",
+    "witsec-mailform-recaptcha-score": "0.5"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Friends Truck",
+        "title": "Accueil",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
       },
       "components": [
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "H1": {
-              "text-align": "center"
-            }
-          },
-          "_name": "header2",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Réservez notre food truck à vos événements !</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n                <div mbr-buttons mbr-theme-style=\"display-5\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\"><span class=\"mbri-zoom-out mbr-iconfont mbr-iconfont-btn\"></span>LEARN MORE</a> <a class=\"btn btn-md btn-primary\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\">LEARN MORE</a> <a class=\"btn btn-md btn-primary\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\">LEARN MORE</a> <a class=\"btn btn-md btn-secondary\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\"><span class=\"mbri-globe mbr-iconfont mbr-iconfont-btn\"></span>LEARN MORE</a> <a class=\"btn btn-md btn-secondary\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\"><span class=\"mbri-globe mbr-iconfont mbr-iconfont-btn\"></span>LEARN MORE</a> \n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://airtable.com/shr57MN2VOfft4dyD\" data-app-placeholder=\"Type Text\">LIVE DEMO</a> <a class=\"btn btn-md btn-white-outline\" href=\"assets/files/paiement-pdf.pdf\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
-          "_cid": "qTkA127IK8",
-          "_anchor": "header2-1",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".content": {
-              "@media (max-width: 767px)": {
-                "text-align": "center",
-                "> div:not(:last-child)": {
-                  "margin-bottom": "2rem"
-                }
-              }
-            },
-            ".media-wrap": {
-              "@media (max-width: 767px)": {
-                "margin-bottom": "1rem"
-              },
-              ".mbr-iconfont-logo": {
-                "font-size": "7.5rem",
-                "color": "#f36"
-              },
-              "img": {
-                "height": "6rem"
-              }
-            },
-            ".footer-lower": {
-              ".copyright": {
-                "@media (max-width: 767px)": {
-                  "margin-bottom": "1rem",
-                  "text-align": "center"
-                }
-              },
-              "hr": {
-                "margin": "1rem 0",
-                "border-color": "#fff",
-                "opacity": ".05"
-              },
-              ".social-list": {
-                "padding-left": "0",
-                "margin-bottom": "0",
-                "list-style": "none",
-                "display": "flex",
-                "flex-wrap": "wrap",
-                "justify-content": "flex-end",
-                "-webkit-justify-content": "flex-end",
-                ".mbr-iconfont-social": {
-                  "font-size": "1.3rem",
-                  "color": "#fff"
-                },
-                ".soc-item": {
-                  "margin": "0 .5rem"
-                },
-                "a": {
-                  "margin": "0",
-                  "opacity": ".5",
-                  "-webkit-transition": ".2s linear",
-                  "transition": ".2s linear",
-                  "&:hover": {
-                    "opacity": "1"
-                  }
-                },
-                "@media (max-width: 767px)": {
-                  "justify-content": "center",
-                  "-webkit-justify-content": "center"
-                }
-              }
-            },
-            "P": {
-              "text-align": "left",
-              "color": "#232323"
-            },
-            "H5": {
-              "color": "#232323"
-            }
-          },
-          "_name": "footer1",
-          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked>\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://mobirise.com/\">\n                        <img src=\"@PROJECT_PATH@/assets/images/logo-dans-le-cercle-friends-truck-192x191.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Adresse</h5>\n                <p class=\"mbr-text\">140, rue de la station,<br>7070 , &nbsp;Le Roeulx</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Contacts\n                </h5>\n                <p class=\"mbr-text\">\n                    Email: friends.truck@outlook.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>Phone: +32 475 92 96 91<br>TVA : 0722 985 936</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Links\n                </h5>\n                <p class=\"mbr-text\">\n                    <a class=\"text-primary\" href=\"https://mobirise.com/\">Website builder</a>\n                    <br><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-win.zip\">Download for Windows</a>\n                    <br><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-mac.zip\">Download for Mac</a>\n                </p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">\n                        © Copyright 2020 - Friends Truck - All Rights Reserved\n                    </p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qTkAaeaxX5",
-          "_anchor": "footer1-2",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
         {
           "alias": false,
           "_styles": {
@@ -600,8 +490,8 @@
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"6.2\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#c1c1c1\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#333333\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"https://mobirise.co\">\n                         <img src=\"@PROJECT_PATH@/assets/images/logo-dans-le-cercle-friends-truck-198x197.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        Friends Truck<br><br></a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a>\n                </li><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                        About Us\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-white-outline\" href=\"https://wa.me/+32475929691\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-mail mbr-iconfont mbr-iconfont-btn\"></span>\n                    Nous contacter</a></div>\n        </div>\n    </nav>\n</section>",
-          "_cid": "s0X6eqIrwX",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#c1c1c1\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#333333\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"https://mobirise.co\">\n                         <img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        Les halls du Roeulx</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n                    <a class=\"nav-link link text-white dropdown-toggle\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\"><span class=\"fas fa-fw fa-archive mbr-iconfont mbr-iconfont-btn\"></span>\n                        \n                        Archives Livourne</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Archives OLD 1/3</a><a class=\"text-white dropdown-item\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Archives OLD 2/3<br></a><a class=\"text-white dropdown-item\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Archives OLD 3/3</a><a class=\"text-white dropdown-item\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Archives DATABASE<br></a></div>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                        About Us\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                    <span class=\"mbri-save mbr-iconfont mbr-iconfont-btn \" data-app-selector=\".mbr-iconfont-btn\"></span>\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
+          "_cid": "s1q62O8Zok",
           "_anchor": "menu1-d",
           "_protectedParams": [],
           "_global": true,
@@ -609,205 +499,42 @@
           "_params": {}
         },
         {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".title": {
-              "margin-bottom": "2rem"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#465052"
-            },
-            "a:not([href]):not([tabindex])": {
-              "color": "#fff",
-              "border-radius": "3px"
-            },
-            "a.btn-white:not([href]):not([tabindex])": {
-              "color": "#333"
-            },
-            "textarea.form-control": {
-              "min-height": "188px"
-            }
-          },
-          "_name": "form1",
-          "_customHTML": "<section class=\"mbr-section form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#c1c1c1\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>Formulaire de contact</b></h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\"><b><i>Partagez-nous vos attentes et posez-nous vos questions, Nous nous occupons du reste !</i></b></h3>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"media-container-column col-lg-8\">\n                <!---Formbuilder Form--->\n                <form action=\"Friends.truck@outlook.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Nous avons bien reçu votre message ! Nous traiterons votre demande prochainement.  Gustativement Friends Truck</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md-4  form-group\" data-for=\"name\">\n                            <label mbr-text mbr-theme-style=\"display-4\" for=\"name\" class=\"form-control-label mbr-fonts-style\">Nom + Prénom</label>\n                            <input type=\"text\" name=\"name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-4  form-group\" data-for=\"email\">\n                            <label mbr-text mbr-theme-style=\"display-4\" for=\"email\" class=\"form-control-label mbr-fonts-style\">Email</label>\n                            <input type=\"email\" name=\"email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-4  form-group\">\n                            <label mbr-text mbr-theme-style=\"display-4\" for=\"phone\" class=\"form-control-label mbr-fonts-style\">Téléphone</label>\n                            <input type=\"tel\" name=\"phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group\">\n                            <label mbr-text mbr-theme-style=\"display-4\" for=\"message\" class=\"form-control-label mbr-fonts-style\">Message : ( date de votre événement , nombre d'invités , lieu de l'événement , vos questions , ... )</label>\n                            <textarea name=\"message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary btn-form\" data-app-placeholder=\"Type Text\" href=\"mailto:friends.truck@outlook.com\">Envoyer</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s0XaJGxHmd",
-          "_anchor": "form1-f",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
+          "alias": "singa4real-form-flatfile",
+          "_isSecondary": true,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".mbr-section": {
-              "text-align": "center",
-              "color": "#fff"
-            },
             "body": {
-              "background": "#eee",
-              "margin-top": "20px"
+              "min-height": "80vh"
             },
-            ".price-tabs": {
-              "background-color": "#fff",
-              "-webkit-box-shadow": "0 5px 20px 0 rgba(39, 39, 39, 0.1)",
-              "box-shadow": "0 5px 20px 0 rgba(39, 39, 39, 0.1)",
-              "display": "inline-block",
-              "padding": "7px",
-              "border-radius": "40px",
-              "border": "1px solid @bgColor2",
-              "margin-bottom": "45px"
+            ".form-control:not(select)": {
+              "padding": "1.5rem 0.5rem"
             },
-            "@media (min-width: 768px)": {
-              ".price-tabs": {
-                "margin-bottom": "60px"
-              },
-              ".price-tabs .nav-link": {
-                "padding": "12px 40px"
-              },
-              ".price-item": {
-                "margin": "0 20px",
-                "padding-top": "20px"
-              },
-              ".price-item .price-top": {
-                "margin": "0 -20px",
-                "border-radius": "20px"
-              },
-              ".price-item .price-top:after": {
-                "border-radius": "0 0 20px 20px"
-              }
+            "select.form-control": {
+              "height": "52px",
+              "padding-left": "0.5rem"
             },
-            ".price-tabs .nav-link": {
-              "color": "@bgColor2",
-              "font-weight": "500",
-              "font-family": "\"Montserrat\", sans-serif",
-              "font-size": "16px",
-              "padding": "12px 35px",
-              "display": "inline-block",
-              "text-transform": "capitalize",
-              "border-radius": "40px",
-              "-webkit-transition": "all 0.3s ease",
-              "transition": "all 0.3s ease"
+            ".form-control::placeholder": {
+              "color": "#ccc",
+              "font-weight": "bold",
+              "font-size": "0.9rem"
             },
-            ".price-tabs .nav-link.active": {
-              "background-color": "@bgColor2",
-              "color": "#fff"
+            ".form-control:focus": {
+              "box-shadow": "none"
             },
-            ".price-item": {
-              "background-color": "#fff",
-              "-webkit-box-shadow": "0 5px 30px 0 rgba(39, 39, 39, 0.15)",
-              "box-shadow": "0 5px 30px 0 rgba(39, 39, 39, 0.15)",
-              "border-radius": "10px"
-            },
-            ".price-item .price-top": {
-              "-webkit-box-shadow": "0 5px 30px 0 rgba(39, 39, 39, 0.15)",
-              "box-shadow": "0 5px 30px 0 rgba(39, 39, 39, 0.15)",
-              "padding": "50px 0 25px",
-              "background-color": "@bgColor2",
-              "border-radius": "10px",
-              "position": "relative",
-              "z-index": "0",
-              "margin-bottom": "33px"
-            },
-            ".price-item .price-top:after": {
-              "height": "50px",
-              "width": "100%",
-              "border-radius": "0 0 10px 10px",
-              "background-color": "@bgColor2",
-              "position": "absolute",
-              "content": "''",
-              "left": "0",
-              "bottom": "-17px",
-              "z-index": "-1",
-              "-webkit-transform": "skewY(5deg)",
-              "transform": "skewY(5deg)",
-              "-webkit-box-shadow": "0 5px 10px 0 rgba(113, 113, 113, 0.15)",
-              "box-shadow": "0 5px 10px 0 rgba(113, 113, 113, 0.15)"
-            },
-            ".price-item .price-top *": {
-              "color": "#fff"
-            },
-            ".price-item .price-top h2": {
-              "font-weight": "700"
-            },
-            ".price-item .price-top h2 sup": {
-              "top": "13px",
-              "left": "-5px",
-              "font-size": "0.35em",
-              "font-weight": "500",
-              "vertical-align": "top"
-            },
-            ".price-item .price-content": {
-              "padding": "30px",
-              "padding-bottom": "40px"
-            },
-            ".price-item .price-content li": {
-              "position": "relative",
-              "margin-bottom": "15px",
-              "margin-left": "10px",
-              "margin-right": "10px",
-              "text-align": "center"
-            },
-            "@media (min-width: 992px)": {
-              ".price-item .price-content li": {
-                "padding-left": "28px",
-                "text-align": "left"
-              },
-              ".price-item .price-content li i": {
-                "position": "absolute",
-                "left": "0",
-                "top": "3px"
-              }
-            },
-            ".price-item .price-content .zmdi-check": {
-              "color": "#28a745"
-            },
-            ".price-item .price-content .zmdi-close": {
-              "color": "#f00"
-            },
-            ".popular": {
-              "background-color": "@bgColor2"
-            },
-            ".popular .price-top": {
-              "background-color": "#fff"
-            },
-            ".popular .price-top:after": {
-              "background-color": "#fff"
-            },
-            ".popular .price-top h4": {
-              "color": "#101f41"
-            },
-            ".popular .price-top h2, .popular .price-top span, .popular .price-top sup": {
-              "color": "@bgColor2"
-            },
-            ".popular .price-content ul *, .popular .price-content ul .zmdi-close, .popular .price-content ul .zmdi-check": {
-              "color": "#fff !important"
-            },
-            "H2": {
-              "text-align": "center"
+            ".ta": {
+              "width": "100%"
             }
           },
-          "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_price_one\" class=\"mbr-section pricing content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n      <input type=\"color\" title=\"Pricing Bg Color\" name=\"bgColor2\" value=\"#673ab7\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n            <div class=\"text-center\">\n                <div class=\"nav price-tabs\" role=\"tablist\">\n                    <a class=\"nav-link active\" href=\"#Burger seul\" role=\"tab\" data-toggle=\"tab\">Burger seul</a>\n                    <a class=\"nav-link\" href=\"#monthly\" role=\"tab\" data-toggle=\"tab\">Monthly</a>\n                </div>\n              <p>Contact me on WhatsApp via +2349066849761 for you costume block or other server side code block</p>\n            </div>\n            <div class=\"tab-content wow fadeIn\" style=\"visibility: visible; animation-name: fadeIn;\">\n                <div role=\"tabpanel\" class=\"tab-pane fade show active\" id=\"Burger seul\">\n                    <div class=\"row justify-content-center\">\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center\">\n                                <div class=\"price-top\">\n                                    <h4>Personal</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>99</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per year</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo rsus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at eros</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Adipisci atque beatae</span>\n                                        </li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center popular\">\n                                <div class=\"price-top\">\n                                    <h4>Business</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>299</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per year</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo risus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at </span>Adipisci atque beatae<span style=\"font-size: 1rem;\"></span></li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom btn-light\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center\">\n                                <div class=\"price-top\">\n                                    <h4>Enterprise</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>399</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per year</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo risus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at eros</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Adipisci atque beatae</span>\n                                        </li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div role=\"tabpanel\" class=\"tab-pane fade\" id=\"monthly\">\n                    <div class=\"row justify-content-center\">\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center\">\n                                <div class=\"price-top\">\n                                    <h4>Personal</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>29</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per month</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo risus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at eros</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Adipisci atque beatae</span>\n                                        </li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center popular\">\n                                <div class=\"price-top\">\n                                    <h4>Busineddss</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>59</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per month</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo risus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at eros</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Adipisci atque beatae</span>\n                                        </li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom btn-light\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 col-lg-4 mb-30\">\n                            <div class=\"price-item text-center\">\n                                <div class=\"price-top\">\n                                    <h4>Enterprise</h4>\n                                    <h2 class=\"mb-0\"><sup>$</sup>99</h2>\n                                    <span class=\"text-capitalize\" mbr-text>per month</span>\n                                </div>\n                                <div class=\"price-content\">\n                                    <ul class=\"border-bottom mb-30 mt-md-4 pb-3 text-left\" mbr-text>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Eget erovtiu faucid</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Cras justo odio</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-check mr-2\"></i>\n                                            <span class=\"c-black\">Morbi leo risus</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Porta consectetur ac</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span> Vestibulum at eros</span>\n                                        </li>\n                                        <li>\n                                            <i class=\"zmdi zmdi-close mr-2\"></i>\n                                            <span>Adipisci atque beatae</span>\n                                        </li>\n                                    </ul>\n                                    <a href=\"#\" class=\"btn btn-custom\" mbr-text>Buy now</a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n</section>",
-          "_cid": "q8l3Z6USi2",
-          "_anchor": "design-block-q8l3Z6USi2",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_name": "singa4real-form-flatfile",
+          "_customHTML": "<section mbr-id=\"_three_in_one_form\" class=\"mbr-section three_in_one_form\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n      <input type=\"checkbox\" title=\"Show logo\" name=\"logo\">\n      <select title=\"Form Type\" name=\"ftype\">\n            <option value=\"1\" selected>Signup</option>\n            <option value=\"2\">Login</option>\n            <option value=\"3\">Forget password</option>\n        </select>\n        <input type=\"text\" title=\"Form Action\" name=\"txtAction\" value=\"./processor.php\">\n        <input type=\"text\" title=\"Success Page\" name=\"txtSuccess\" value=\"./dashboard.php\">\n        <input type=\"text\" title=\"Error Page\" name=\"txtFail\" value=\"./error.php\">\n      <input type=\"text\" title=\"Database Folder path\" name=\"txtDb\" value=\"./database_folder\">\n      <hr><header>Form input settings</header>\n      <input type=\"checkbox\" title=\"Show Username\" name=\"username\" checked>\n      <input type=\"checkbox\" title=\"Show Fullname\" name=\"fullname\" checked>\n      <input type=\"checkbox\" title=\"Show Email\" name=\"email\" checked>\n      <input type=\"checkbox\" title=\"Show Gender\" name=\"gender\" checked>\n      <input type=\"checkbox\" title=\"Show Phone\" name=\"phone\" checked>\n      <input type=\"checkbox\" title=\"Show Password\" name=\"password\" checked>\n      <input type=\"checkbox\" title=\"Show Confirm Pass\" name=\"cpassword\" checked>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <!-- Navbar-->\n<header class=\"header\" mbr-if=\"logo\">\n    <nav class=\"navbar navbar-expand-lg navbar-light py-3\">\n        <div class=\"container\">\n            <!-- Navbar Brand -->\n            <a href=\"#\" class=\"navbar-brand\">\n               <img src=\"https://res.cloudinary.com/mhmd/image/upload/v1571398888/Group_1514_tjekh3_zkts1c.svg\" alt=\"logo\" width=\"150\">\n            </a>\n        </div>\n    </nav>\n</header>\n\n\n<div class=\"container\">\n    <div class=\"row py-5 mt-4 align-items-center\">\n        <!-- For Demo Purpose -->\n        <div class=\"col-md-5 pr-lg-5 mb-5 mb-md-0\">\n            <img src=\"https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg\" alt class=\"img-fluid mb-3 d-none d-md-block\">\n            <h5>Signup, Login and Reset password form</h5>\n            <p class=\"font-italic text-muted mb-0\">This is a three in one mobirise design block, i:e signup, login and password reset form.<br></p>\n            <p class=\"font-italic text-muted\">Contact me on WhatsApp <a href=\"https://wa.me/+2349066849761\">+2349066849761</a> for your unique design block and extensions with it server side code.</p>\n        </div>\n      \n        <!-- Registeration Form -->\n        <div class=\"col-md-7 col-lg-6 ml-auto\" mbr-if=\"ftype == 1\">\n            \n              <form action=\"{{txtAction}}\" method=\"post\" class=\"mbr-form ajaxform\">\n              <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12\"></div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"form_name\" value=\"signupform\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"signup_success\" value=\"{{txtSuccess}}\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"signup_error\" value=\"{{txtFail}}\">\n                        <input type=\"hidden\" name=\"db_dir\" value=\"{{txtDb}}\">\n                    </div>\n                <div class=\"row\">\n\n                    <!-- Username -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"username\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-user text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"username\" type=\"text\" name=\"username\" placeholder=\"Username\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"username\" required=\"required\">\n                    </div>\n                    <!-- Email Address -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"email\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-envelope text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"email\" type=\"email\" name=\"email\" placeholder=\"Email Address\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"Email\" required=\"required\">\n                    </div>\n                    <!-- Full Name -->\n                    <div class=\"input-group col-lg-12 mb-4\" mbr-if=\"fullname\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-user text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"fullame\" type=\"text\" name=\"fullname\" placeholder=\"Fullname\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"Fullname\" required=\"required\">\n                    </div>\n                    <!-- Phone Number -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"phone\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-phone-square text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"phoneNumber\" type=\"tel\" name=\"phone\" placeholder=\"Phone Number\" class=\"form-control bg-white border-md border-left-0 pl-3\" data-form-field=\"Phone\" required=\"required\">\n                    </div>\n\n\n                    <!-- Gender -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"gender\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-black-tie text-muted fa-briefcase fas\"></i>\n                            </span>\n                        </div>\n                        <select id=\"gender\" name=\"gender\" class=\"form-control custom-select bg-white border-left-0 border-md\" data-form-field=\"Gender\" required=\"required\">\n                            <option value>Choose your Gender</option>\n                            <option value=\"Male\">Male</option>\n                            <option value=\"Female\">Female</option>\n                            <option value=\"Others\">Others</option>\n                        </select>\n                    </div>\n\n                    <!-- Password -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"password\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-lock text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"password\" type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"Password\" required=\"required\">\n                    </div>\n\n                    <!-- Password Confirmation -->\n                    <div class=\"input-group col-lg-6 mb-4\" mbr-if=\"cpassword\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-lock text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"passwordConfirmation\" type=\"password\" name=\"confirmpassword\" placeholder=\"Confirm Password\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"Confirm Password\" required=\"required\">\n                    </div>\n\n                    <!-- Submit Button -->\n                    <div class=\"form-group col-lg-12 mx-auto mb-0\" mbr-buttons=\"true\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                            <button type=\"submit\" class=\"btn btn-primary btn-block font-weight-bold py-2\">Create your account</button>\n                        </div>\n\n                    <!-- Divider Text -->\n                    <div class=\"form-group col-lg-12 mx-auto d-flex align-items-center my-4\" mbr-if=\"Socialsignup\">\n                        <div class=\"border-bottom w-100 ml-5\" mbr-if=\"Socialsignup\"></div>\n                        <span class=\"px-2 small text-muted font-weight-bold text-muted\" mbr-if=\"Socialsignup\">OR</span>\n                        <div class=\"border-bottom w-100 mr-5\" mbr-if=\"Socialsignup\"></div>\n                    </div>\n\n                    <!-- Social Login -->\n                    <div class=\"form-group col-lg-12 mx-auto\" mbr-if=\"Socialsignup\" mbr-buttons=\"true\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a href=\"#\" class=\"btn btn-primary btn-block py-2 btn-facebook\" data-app-placeholder=\"Type Text\">\n                            <i class=\"fa fa-facebook-f mr-2 fab\"></i>\n                            <span class=\"font-weight-bold\">Continue with Facebook</span>\n                        </a>\n                        <a href=\"#\" class=\"btn btn-primary btn-block py-2 btn-twitter\" data-app-placeholder=\"Type Text\">\n                            <i class=\"fa fa-twitter mr-2\"></i>\n                            <span class=\"font-weight-bold\">Continue with Twitter</span>\n                        </a></div>\n\n                    <!-- Already Registered -->\n                    <div class=\"text-center w-100\">\n                        <p class=\"text-muted font-weight-bold\">Already Registered? <a href=\"login.html\" class=\"text-primary ml-2\">Login</a></p>\n                    </div>\n\n                </div>\n            </form>\n        </div>\n      \n      \n      \n      \n\n        <div class=\"col-md-7 col-lg-6 ml-auto\" mbr-if=\"ftype == 2\">\n            <form action=\"{{txtAction}}\" method=\"post\" class=\"mbr-form ajaxform\">\n              <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12\"></div>\n                        <input type=\"hidden\" name=\"form_name\" value=\"loginform\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"login_success\" value=\"{{txtSuccess}}\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"login_error\" value=\"{{txtFail}}\">\n                        <input type=\"hidden\" name=\"db_dir\" value=\"{{txtDb}}\">\n                        \n                    </div>\n                <div class=\"row\">\n                   <!-- Username -->\n                    <div class=\"input-group col-lg-12 mb-4\" mbr-if=\"username\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-user text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"username-login\" type=\"text\" name=\"username\" placeholder=\"Username\" class=\"form-control bg-white border-left-0 border-md\" data-form-field=\"username\" required=\"required\">\n                    </div>\n\n                    <!-- Password -->\n                    <div class=\"input-group col-lg-12 mb-4\" mbr-if=\"password\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-lock text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"password2\" type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control bg-white border-left-0 border-md\" required=\"required\">\n                    </div>\n\n                    <!-- Submit Button -->\n                    <div class=\"form-group col-lg-12 mx-auto mb-0\" mbr-buttons=\"true\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><button type=\"submit\" class=\"btn btn-primary btn-block font-weight-bold py-2\">Login to account</button></div>\n\n                    <!-- Divider Text -->\n                    <div class=\"form-group col-lg-12 mx-auto d-flex align-items-center my-4\" mbr-if=\"Socialsignup\">\n                        <div class=\"border-bottom w-100 ml-5\" mbr-if=\"Socialsignup\"></div>\n                        <span class=\"px-2 small text-muted font-weight-bold text-muted\" mbr-if=\"Socialsignup\">OR</span>\n                        <div class=\"border-bottom w-100 mr-5\" mbr-if=\"Socialsignup\"></div>\n                    </div>\n\n                    <!-- Social Login -->\n                    <div class=\"form-group col-lg-12 mx-auto\" mbr-if=\"Socialsignup\" mbr-buttons=\"true\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                        <a href=\"#\" class=\"btn btn-primary btn-block py-2 btn-facebook\">\n                            <i mbr-icon class=\"fa fa-facebook-f mr-2\"></i>\n                            <span class=\"font-weight-bold\">Continue with Facebook</span>\n                        </a>\n                        <a href=\"#\" class=\"btn btn-primary btn-block py-2 btn-twitter\">\n                            <i mbr-icon class=\"fa fa-twitter mr-2\"></i>\n                            <span class=\"font-weight-bold\">Continue with Twitter</span>\n                        </a>\n                    </div>\n\n                    <!-- Already Registered -->\n                    <div class=\"text-center w-100\">\n                        <p class=\"text-muted font-weight-bold\">Dont Have Account? <a href=\"#\" class=\"text-primary ml-2\">Sign Up</a></p>\n                    </div>\n\n                </div>\n            </form>\n        </div>\n      \n      \n      \n        <div class=\"col-md-7 col-lg-6 ml-auto\" mbr-if=\"ftype == 3\">\n            <form action=\"{{txtAction}}\" method=\"post\" class=\"mbr-form ajaxform\">\n              <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12\"></div>\n                         <input type=\"hidden\" name=\"form_name\" value=\"forgotpassword\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"reset_success\" value=\"{{txtSuccess}}\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"reset_error\" value=\"{{txtFail}}\">\n                        <input type=\"hidden\" name=\"db_dir\" value=\"{{txtDb}}\">\n                    </div>\n                <div class=\"row\">\n\n                    <!-- Email Address -->\n                    <div class=\"input-group col-lg-12 mb-4\" mbr-if=\"email\">\n                        <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text bg-white px-4 border-md border-right-0\">\n                                <i mbr-icon class=\"fa fa-envelope text-muted\"></i>\n                            </span>\n                        </div>\n                        <input id=\"email3\" type=\"email\" name=\"email\" placeholder=\"Email Address\" class=\"form-control bg-white border-left-0 border-md\" required=\"required\">\n                    </div>\n\n                    <!-- Submit Button -->\n                    <div class=\"form-group col-lg-12 mx-auto mb-0\" mbr-buttons=\"true\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                      <button type=\"submit\" class=\"btn btn-primary btn-block font-weight-bold py-2\">Reset My Password</button>\n              \n                    </div>\n                    <!-- Already Registered -->\n                    <div class=\"text-center w-100\">\n                        <p class=\"text-muted font-weight-bold\">Remembered My Account? <a href=\"#\" class=\"text-primary ml-2\">Login</a></p>\n                    </div>\n\n                </div>\n            </form>\n        </div>\n      \n    </div>\n</div>\n   \n    \n</section>",
+          "_cid": "s1uFCqoB0A",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "singa4real-form-flatfile-j"
         }
       ]
     }
